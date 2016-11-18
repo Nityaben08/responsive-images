@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+picture,
+img {
+    max-width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+    ul li {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 1200px) {
+    ul li {
+        float: left;
+        width: 50%;
+    }
+}
+
+
+/*the biggest screen's css goes here */
+
+@media screen and (min-width:1200px) {
+    ul li {
+        float: left;
+        width: 25%;
+    }
+    ul.clearfix::after {
+        content: '';
+        clear: left;
+        display: block;
+    }
+}
